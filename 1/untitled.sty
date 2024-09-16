@@ -1,0 +1,490 @@
+#!MC 1410
+$!SetStyleBase Factory
+$!PlotType  = XYLine
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-2,11]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      FontFamily = 'Times New Roman'
+      IsBold = No
+      Height = 4
+      }
+    Box
+      {
+      BoxType = None
+      }
+    XYPos
+      {
+      X = 52.358
+      Y = 46.178
+      }
+    }
+$!LineMap  [1]
+  Name = 'IC'
+  Assign
+    {
+    Zone = 10
+    XAxisVar = 2
+    YAxisVar = 4
+    }
+  Lines
+    {
+    Color = Blue
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Show = No
+    Color = Custom1
+    FillColor = Custom1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [2]
+  Name = 'mesh1000'
+  Assign
+    {
+    Zone = 10
+    XAxisVar = 2
+    YAxisVar = 5
+    }
+  Lines
+    {
+    Color = Green
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Show = No
+    Color = Custom3
+    FillColor = Custom3
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [3]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 1
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [4]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 2
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [5]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 3
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Blue
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [6]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 4
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Custom1
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [7]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 5
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Custom3
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [8]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 6
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Purple
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [9]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 7
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [10]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 8
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [11]
+  Name = 'mesh100'
+  Assign
+    {
+    Zone = 9
+    XAxisVar = 3
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      GeomShape = Circle
+      }
+    Color = Red
+    FillMode = UseLineColor
+    FillColor = Blue
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea
+    {
+    DrawBorder = Yes
+    }
+$!XYLineAxis 
+  XDetail 1
+    {
+    RangeMin = 0
+    RangeMax = 2
+    GRSpacing = 0.5
+    TickLabel
+      {
+      TextShape
+        {
+        FontFamily = 'Times New Roman'
+        Height = 4
+        }
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 1
+        TimeDateFormat = ''
+        }
+      }
+    Title
+      {
+      TitleMode = UseText
+      Text = 'x'
+      TextShape
+        {
+        FontFamily = 'Times New Roman'
+        IsBold = No
+        IsItalic = Yes
+        Height = 5
+        }
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    RangeMin = -0.10000000000000000555
+    RangeMax = 1.1000000000000000888
+    AutoGrid = No
+    GRSpacing = 0.2
+    Ticks
+      {
+      NumMinOrTicks = 1
+      }
+    TickLabel
+      {
+      TextShape
+        {
+        FontFamily = 'Times New Roman'
+        Height = 4
+        }
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 1
+        TimeDateFormat = ''
+        }
+      }
+    Title
+      {
+      TitleMode = UseText
+      Text = 'u'
+      TextShape
+        {
+        FontFamily = 'Times New Roman'
+        IsBold = No
+        IsItalic = Yes
+        Height = 5
+        }
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+$!AttachText 
+  AnchorPos
+    {
+    X = 21.5846994535519
+    Y = 42.01898188093184
+    }
+  TextShape
+    {
+    FontFamily = 'Times New Roman'
+    IsBold = No
+    Height = 24
+    }
+  Text = 't=0.8'
+$!SetStyleBase Config

@@ -5,7 +5,7 @@
 #include <math.h> 
 
 //case1: {1 0}; case2: {-1 1}; case3: {0 1 0}; case4: {sinx};
-#define testcase "4"
+#define testcase "2"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ int init(vector<double> &u, double dx)
 			if (xi <= 1.0){
 				u[i] = -1.0;
 			} else {
-				u[i] = 0.0;
+				u[i] = 1.0;
 			}
 		} else if (testcase == "3") {
 			if (xi >= 2.0/3.0 && xi <= 4.0/3.0){
@@ -77,7 +77,7 @@ int update(vector<double> &u, vector<double> &un, double dt, double dx)
 		un[nx-1] = 0.0;
 	} else if (testcase == "2") {
 		un[0] = -1.0;
-		un[nx-1] = 0.0;
+		un[nx-1] = 1.0;
 	} else {
 		un[0] = 0.0;
 		un[nx-1] = 0.0;
